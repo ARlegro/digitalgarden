@@ -274,11 +274,14 @@ module.exports = function (eleventyConfig) {
   // 추가
   eleventyConfig.addGlobalData("eleventyComputed", {
     permalink: (data) => {
-      // fileSlug가 없으면 permalink 설정하지 않음
-      if (!data.fileSlug) return undefined;
+      // front-matter에 permalink 있으면 그대로 사용
+      if (data.permalink) return data.permalink;
 
-      if (data.fileSlug === "index") return "/";
-      return `/${data.fileSlug}/`;
+      // gardenEntry 태그 있는 경우만 루트, 나머지는 /notes/slug/
+      if (data.tags && data.tags.includes("gardenEntry")) return "/";
+
+      // 중복 방지 위해 기본적으로 /notes/ 하위에 둔다
+      if (data.fileSlug) return `/notes/${data.fileSlug}/`;
     },
   });
 
