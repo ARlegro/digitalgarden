@@ -1,8 +1,9 @@
 ---
-{"dg-publish":true,"dg-home":false,"slug":"<% tp.file.title.replaceAll(' ', '-') %>","permalink":"///","dgPassFrontmatter":true,"created":"2025-05-06T12:08:42.878+09:00","updated":"2025-05-06T13:53:52.686+09:00"}
+{"dg-publish":true,"dg-home":false,"permalink":"//obsidian-file-hosting/","dgPassFrontmatter":true,"created":"2025-05-06T12:08:42.878+09:00","updated":"2025-05-06T13:57:54.363+09:00"}
 ---
 
 
+제발 
 옵시디언 파일 어디???
 왜 안돼
 
