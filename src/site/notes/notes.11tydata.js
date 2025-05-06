@@ -11,12 +11,12 @@ module.exports = {
       }
       return "layouts/note.njk";
     },
-    permalink: (data) => {
-      if (data.tags.indexOf("gardenEntry") != -1) {
-        return "/";
-      }
-      return data.permalink || undefined;
-    },
+    // permalink: (data) => {
+    //   if (data.tags.indexOf("gardenEntry") != -1) {
+    //     return "/";
+    //   }
+    //   return data.permalink || undefined;
+    // },
     settings: (data) => {
       const noteSettings = {};
       allSettings.forEach((setting) => {
