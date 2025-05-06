@@ -274,6 +274,9 @@ module.exports = function (eleventyConfig) {
   // 추가
   eleventyConfig.addGlobalData("eleventyComputed", {
     permalink: (data) => {
+      // fileSlug가 없으면 permalink 설정하지 않음
+      if (!data.fileSlug) return undefined;
+
       if (data.fileSlug === "index") return "/";
       return `/${data.fileSlug}/`;
     },
