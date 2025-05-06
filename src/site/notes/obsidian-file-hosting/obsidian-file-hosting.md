@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"dg-home":"false","permalink":"/obsidian-file-hosting/obsidian-file-hosting/","tags":["gardenEntry"],"dgPassFrontmatter":true,"created":"2025-05-06T12:08:42.878+09:00","updated":"2025-05-06T14:15:16.789+09:00"}
+{"dg-publish":true,"dg-home":"false","permalink":"/obsidian-file-hosting/obsidian-file-hosting/","tags":["gardenEntry"],"dgPassFrontmatter":true,"created":"2025-05-06T12:08:42.878+09:00","updated":"2025-05-06T14:18:22.163+09:00"}
 ---
 
 
 제발 
-옵시디언 파일 어디???
+sdfsdfsadfasfds옵시디언 파일 어디???
 dfdfsfdsfds안돼 d
 이번엔 제발 
 
