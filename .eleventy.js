@@ -1,4 +1,4 @@
-//const slugify = require("@sindresorhus/slugify");
+const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
 const matter = require("gray-matter");
@@ -13,36 +13,6 @@ const {
   userMarkdownSetup,
   userEleventySetup,
 } = require("./src/helpers/userSetup");
-
-// .eleventy.js
-const slugify = require("slugify");   // ← npm i slugify 로 설치한 모듈
-
-module.exports = function (eleventyConfig) {
-  // 1. 기존 slug·slugify 필터 덮어쓰기
-  function koSlug(value) {
-    return slugify(value, {
-      lower: true,        // 소문자 변환
-      locale: "ko",       // 다국어 처리
-      strict: false,      // ASCII 외 문자 삭제 금지
-      remove: /[^\p{Letter}\p{Number}\s-]/gu, // 이모지·특수문자만 제거, 한글 살림
-    }).replace(/\s+/g, "-");         // 공백 → 하이픈
-  }
-
-  eleventyConfig.addFilter("slug", koSlug);     // 구 slug 필터 대체
-  eleventyConfig.addFilter("slugify", koSlug);  // 신 slugify 필터도 동일 처리
-
-  /* ↓ 필요에 따라 다른 설정 계속... */
-  return {
-    dir: { input: "src/site", output: "dist" },
-  };
-};
-
-eleventyConfig.addGlobalData("eleventyComputed", {
-  permalink: (data) => {
-    if (data.fileSlug === "index") return "/";
-    return `/${data.fileSlug}/`;
-  }
-});
 
 
 const Image = require("@11ty/eleventy-img");
@@ -300,6 +270,14 @@ module.exports = function (eleventyConfig) {
     .use(userMarkdownSetup);
 
   eleventyConfig.setLibrary("md", markdownLib);
+
+  // 추가
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    permalink: (data) => {
+      if (data.fileSlug === "index") return "/";
+      return `/${data.fileSlug}/`;
+    },
+  });
 
   eleventyConfig.addFilter("isoDate", function (date) {
     return date && date.toISOString();
