@@ -37,6 +37,14 @@ module.exports = function (eleventyConfig) {
   };
 };
 
+eleventyConfig.addGlobalData("eleventyComputed", {
+  permalink: (data) => {
+    if (data.fileSlug === "index") return "/";
+    return `/${data.fileSlug}/`;
+  }
+});
+
+
 const Image = require("@11ty/eleventy-img");
 function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
   let options = {
