@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/etc/obsidian-hosting/","created":"2025-05-06T14:38:58.729+09:00","updated":"2025-05-06T15:18:19.909+09:00"}
+{"dg-publish":true,"permalink":"/etc/obsidian-hosting/","created":"2025-05-06T14:38:58.729+09:00","updated":"2025-05-06T15:22:43.815+09:00"}
 ---
 
-sdfasf sd dfs 
+sdfasf sd dfs 제대로 된듯??
 		제발 이번에도 안된다고?? 이번엔 되df잔 
 sdfsdfsadfasfds옵시디언 파일 어디???
 
