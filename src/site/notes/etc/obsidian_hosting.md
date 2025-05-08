@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/etc/obsidian-hosting/","created":"2025-05-07T09:21:29.566+09:00","updated":"2025-05-08T09:32:59.986+09:00"}
+{"dg-publish":true,"permalink":"/etc/obsidian-hosting/","created":"2025-05-07T09:21:29.566+09:00","updated":"2025-05-08T09:35:58.305+09:00"}
 ---
 
 
@@ -13,7 +13,7 @@
 2. 정적 사이트 생성기 : 여기선 Digital Garden 플러그인 사용할 것
 3. 호스팅 ex. netlify, versal, GitHub Pages 
 
-<br>
+
 ## 과정 
 
 ### 기본 과정 
