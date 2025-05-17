@@ -1,6 +1,6 @@
 ## 블로그 배포용 깃허브 
 
-> **옵시디언으로 메모 후 publish 명령어 입력 ➡️ 블로그에 자동 배포**
+> **옵시디언 메모 후 publish 명령어 입력 ➡️ 블로그에 자동 배포**
 <br>
 
 ![image](https://github.com/user-attachments/assets/2f31f3ab-01c3-4b6b-9d24-ffa212f0711d)
