@@ -3,7 +3,8 @@
 > **옵시디언 메모 후 publish 명령어 입력 ➡️ 블로그에 자동 배포**
 <br>
 
-![image](https://github.com/user-attachments/assets/2f31f3ab-01c3-4b6b-9d24-ffa212f0711d)
+![image](https://github.com/user-attachments/assets/e8f1b150-c8a3-42c5-82de-472077379c2e)
+
 
 
 
